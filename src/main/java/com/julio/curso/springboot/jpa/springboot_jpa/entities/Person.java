@@ -18,8 +18,8 @@ public class Person {
     private String name;
     private String lastname;
 
-    @Column(name="programming_lenguage")
-    private String programmingLenguage;
+    @Column(name="programming_language")
+    private String programmingLanguage;
 
     public Person() {}
 
@@ -27,7 +27,7 @@ public class Person {
         this.id = id;
         this.name = name;
         this.lastname = lastname;
-        this.programmingLenguage = programmingLenguage;
+        this.programmingLanguage = programmingLenguage;
     }
     public Long getId() {
         return id;
@@ -47,17 +47,17 @@ public class Person {
     public void setLastname(String lastname) {
         this.lastname = lastname;
     }
-    public String getProgrammingLenguage() {
-        return programmingLenguage;
+    public String getProgrammingLanguage() {
+        return programmingLanguage;
     }
-    public void setProgrammingLenguage(String programmingLenguage) {
-        this.programmingLenguage = programmingLenguage;
+    public void setProgrammingLanguage(String programmingLenguage) {
+        this.programmingLanguage = programmingLenguage;
     }
 
     @Override
     public String toString() {
-        return "[id=" + id + ", name=" + name + ", lastname=" + lastname + ", programmingLenguage="
-                + programmingLenguage + "]";
+        return "[id=" + id + ", name=" + name + ", lastname=" + lastname + ", programmingLanguage="
+                + programmingLanguage + "]";
     }
 
 }
